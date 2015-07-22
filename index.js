@@ -4,7 +4,7 @@ var request = require('request');
 function createWrapper(request, options) {
   if (!request)
     throw new Error("Must request object as first argument");
-  if (!request.iget)
+  if (!request.get)
     throw new Error("Not a request object");
 
   if (!options) {
